@@ -11,13 +11,14 @@
 ### 2. Structure du Framework
 ```yaml
 framework:
-  répertoires:
-    - core/: "Composants fondamentaux du système"
-    - output/: "Prompts générés"
-    - docs/: "Documentation"
+  core:
+    - techniques/: "Approches de prompting"
+    - templates/: "Modèles réutilisables"
+    - versioning/: "Gestion des versions"
+    - core_files: "Composants essentiels"
 ```
 
-## PROCESSUS DE GÉNÉRATION
+## WORKFLOW DE GÉNÉRATION
 
 ### 1. Lecture de la Demande
 ```yaml
@@ -32,144 +33,129 @@ framework:
     - Confirmer la compréhension
 ```
 
-### 2. Workflow Obligatoire
+### 2. Traitement Principal
 ```yaml
 séquence_workflow:
-  1. input.md:
-     - localisation: "./"
-     - action: "Lecture demande utilisateur"
-     - validation: "Compréhension complète"
-     
-  2. core/circuit_manager.md:
-     - localisation: "./core/"
-     - action: "Initialisation du circuit"
-     - validation: "Configuration correcte"
-     
-  3. core/context_management.md:
-     - localisation: "./core/"
+  1. context_management.md:
      - action: "Analyse du contexte"
      - validation: "Contexte établi"
      
-  4. core/adaptation_patterns.md:
-     - localisation: "./core/"
+  2. adaptation_patterns.md:
      - action: "Sélection patterns"
      - validation: "Patterns appropriés"
      
-  5. core/unified_processor.md:
-     - localisation: "./core/"
-     - action: "Traitement demande"
-     - validation: "Traitement complet"
+  3. prompt_structure.md:
+     - action: "Structure du prompt"
+     - validation: "Structure validée"
      
-  6. core/unified_metrics.md:
-     - localisation: "./core/"
-     - action: "Validation qualité"
-     - validation: "Métriques conformes"
+  4. task_execution.md:
+     - action: "Exécution"
+     - validation: "Tâche complétée"
 ```
 
-### 3. Validation du Processus
+### 3. Validation et Métriques
 ```yaml
-validation_processus:
-  utilisation:
-    - core/process_validator.md: "Validation de chaque étape"
+validation:
+  process_validator:
+    - Vérification workflow
+    - Contrôle qualité
+    - Documentation process
     
-  points_contrôle:
-    - Avant chaque étape: "Pré-conditions"
-    - Pendant l'étape: "Exécution"
-    - Après l'étape: "Post-conditions"
-    
-  documentation:
-    - Logs complets
-    - Rapport d'exécution
-    - Traçabilité
+  unified_metrics:
+    - Métriques qualité
+    - Analyse performance
+    - Rapport validation
 ```
 
 ## GÉNÉRATION DU PROMPT
 
-### 1. Structure du Prompt
+### 1. Structure Obligatoire
 ```yaml
 structure_prompt:
   en_tête:
     - Version et date
-    - Améliorations/changements
+    - Contexte
+    - Objectifs
     
-  contenu:
-    - Objectif principal
-    - Capacités fondamentales
-    - Approche interactive
-    - Directives communication
+  corps:
+    - Rôle et capacités
+    - Instructions principales
+    - Contraintes spécifiques
+    - Exemples d'utilisation
     
-  exemples:
-    - Cas d'utilisation
-    - Scénarios pratiques
+  validation:
+    - Critères qualité
+    - Points de contrôle
+    - Métriques succès
 ```
 
 ### 2. Règles de Style
 ```yaml
 style:
   langue: "français"
-  ton: "professionnel mais accessible"
+  ton: "professionnel"
   format: "markdown"
   structure: "claire et hiérarchique"
 ```
 
-### 3. Validation Finale
+## TECHNIQUES DE PROMPTING
+
+### 1. Sélection Technique
 ```yaml
-validation_finale:
+techniques:
+  disponibles:
+    - chain_of_thought: "Raisonnement étape par étape"
+    - few_shot: "Apprentissage par exemples"
+    - zero_shot: "Sans exemple préalable"
+    - role_based: "Basé sur un rôle"
+    - meta_prompting: "Prompting sur le prompting"
+    - self_reflection: "Auto-évaluation"
+```
+
+### 2. Application Template
+```yaml
+templates:
+  utilisation:
+    - Sélection template adapté
+    - Personnalisation contexte
+    - Validation cohérence
+```
+
+## VALIDATION FINALE
+
+### 1. Critères Qualité
+```yaml
+qualité:
   critères:
-    - Respect du workflow
-    - Qualité du contenu
-    - Conformité format
-    - Documentation complète
-    
-  livrables:
-    - Prompt généré
-    - Logs de processus
-    - Rapport validation
+    - Respect workflow
+    - Conformité structure
+    - Clarté instructions
+    - Cohérence globale
 ```
 
-## MAINTENANCE ET AMÉLIORATION
-
-### 1. Gestion des Erreurs
+### 2. Documentation
 ```yaml
-gestion_erreurs:
-  détection:
-    - Utiliser process_validator.md
-    - Vérifier chaque étape
-    - Noter les anomalies
-    
-  correction:
-    - Arrêter le processus
-    - Corriger l'erreur
-    - Reprendre le workflow
-```
-
-### 2. Amélioration Continue
-```yaml
-amélioration:
-  sources:
-    - Retours d'utilisation
-    - Analyses métriques
-    - Suggestions système
-    
-  processus:
-    - Évaluation impact
-    - Test modifications
-    - Documentation changements
+documentation:
+  éléments:
+    - Processus suivi
+    - Décisions prises
+    - Métriques obtenues
+    - Améliorations possibles
 ```
 
 ## NOTES IMPORTANTES
 
-1. **Aucune Étape ne Peut Être Sautée**
-   - Le workflow est séquentiel
-   - Chaque étape est obligatoire
-   - La validation est requise
+1. **Séquence Stricte**
+   - Suivre l'ordre du workflow
+   - Ne pas sauter d'étapes
+   - Valider chaque phase
 
-2. **Documentation Obligatoire**
-   - Tracer chaque action
-   - Logger les décisions
-   - Documenter les problèmes
+2. **Validation Continue**
+   - Contrôler chaque étape
+   - Documenter les résultats
+   - Tracer les décisions
 
-3. **Qualité Prioritaire**
-   - Suivre toutes les étapes
-   - Valider chaque output
-   - Maintenir la cohérence
+3. **Amélioration Continue**
+   - Noter les points d'amélioration
+   - Proposer des optimisations
+   - Maintenir la qualité
