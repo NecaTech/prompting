@@ -69,7 +69,26 @@ validation:
 
 ## GÉNÉRATION DU PROMPT
 
-### 1. Structure Obligatoire
+### 1. Règles de Nommage et Stockage
+```yaml
+output:
+  localisation: "/output/"
+  format_fichier: "markdown (.md)"
+  convention_nommage:
+    format: "[nom_du_prompt].md"
+    exemples:
+      - assistant_créatif.md
+      - analyseur_code.md
+      - tuteur_mathématiques.md
+  
+  structure_dossier:
+    - output/
+      |- assistant_créatif.md
+      |- analyseur_code.md
+      |- tuteur_mathématiques.md
+```
+
+### 2. Structure Obligatoire
 ```yaml
 structure_prompt:
   en_tête:
@@ -89,7 +108,7 @@ structure_prompt:
     - Métriques succès
 ```
 
-### 2. Règles de Style
+### 3. Règles de Style
 ```yaml
 style:
   langue: "français"

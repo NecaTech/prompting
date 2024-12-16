@@ -1,192 +1,123 @@
-# Guide d'Amélioration Continue
+# Guide d'Amélioration du Framework
 
-## Format des Suggestions
+## Comment Proposer des Améliorations
 
-### 1. Structure de Proposition
+### 1. Format de Proposition
 ```yaml
 proposition:
-  titre: "Titre concis de l'amélioration"
-  type: ["technique"|"processus"|"documentation"]
-  priorité: ["haute"|"moyenne"|"basse"]
-  impact: "Description de l'impact attendu"
-  effort: "Estimation de l'effort requis"
+  type: "[type d'amélioration]"  # architecture/performance/feature/documentation
+  composant: "[composant concerné]"  # nom du fichier ou du module
+  priorité: "[urgence]"  # haute/moyenne/basse
 ```
 
-### 2. Documentation Requise
+### 2. Description Détaillée
 ```yaml
-documentation:
-  contexte: "Situation actuelle"
-  problème: "Point à améliorer"
-  solution: "Solution proposée"
-  bénéfices: "Avantages attendus"
-  risques: "Risques potentiels"
+description:
+  problème: "[description du problème ou du besoin]"
+  solution: "[proposition de solution]"
+  impact: "[impact attendu]"
 ```
 
-## Types d'Améliorations
-
-### 1. Améliorations Techniques
-```yaml
-technique:
-  domaines:
-    prompt_engineering:
-      - Nouvelles techniques de prompting
-      - Optimisation des patterns existants
-      - Amélioration des templates
-    
-    validation:
-      - Nouveaux critères de qualité
-      - Métriques additionnelles
-      - Outils d'analyse
-    
-    performance:
-      - Optimisation du workflow
-      - Réduction du temps de traitement
-      - Amélioration de la précision
-```
-
-### 2. Améliorations de Processus
-```yaml
-processus:
-  aspects:
-    workflow:
-      - Simplification des étapes
-      - Automatisation des tâches
-      - Optimisation des validations
-    
-    documentation:
-      - Clarification des guides
-      - Enrichissement des exemples
-      - Mise à jour des templates
-    
-    maintenance:
-      - Gestion des versions
-      - Suivi des modifications
-      - Processus de revue
-```
-
-## Processus de Soumission
-
-### 1. Analyse Préliminaire
-```yaml
-analyse:
-  étapes:
-    1. Identification:
-       - Problème ou opportunité
-       - Domaine concerné
-       - Impact potentiel
-       
-    2. Évaluation:
-       - Faisabilité technique
-       - Ressources requises
-       - Contraintes existantes
-       
-    3. Priorisation:
-       - Urgence du besoin
-       - Valeur ajoutée
-       - Dépendances
-```
-
-### 2. Proposition Formelle
-```yaml
-proposition:
-  contenu:
-    description:
-      - Contexte détaillé
-      - Objectifs spécifiques
-      - Solution proposée
-    
-    plan:
-      - Étapes d'implémentation
-      - Ressources nécessaires
-      - Timeline estimée
-    
-    validation:
-      - Critères de succès
-      - Métriques d'évaluation
-      - Tests requis
-```
-
-## Cycle d'Amélioration
-
-### 1. Implémentation
+### 3. Plan d'Implémentation
 ```yaml
 implémentation:
-  phases:
-    1. Développement:
-       - Création/modification du code
-       - Tests unitaires
-       - Documentation
-       
-    2. Revue:
-       - Vérification technique
-       - Validation fonctionnelle
-       - Conformité aux standards
-       
-    3. Déploiement:
-       - Mise en production
-       - Monitoring
-       - Support initial
+  étapes: "[liste des étapes nécessaires]"
+  ressources: "[ressources requises]"
+  délai: "[estimation du temps]"
 ```
 
-### 2. Suivi et Évaluation
-```yaml
-évaluation:
-  aspects:
-    performance:
-      - Métriques d'utilisation
-      - Retours utilisateurs
-      - Problèmes identifiés
-    
-    ajustements:
-      - Corrections nécessaires
-      - Optimisations possibles
-      - Améliorations futures
-```
+## Types d'Améliorations Possibles
+
+### 1. Architecture
+- Optimisation des flux de données
+- Nouveaux composants
+- Refactoring de structure
+
+### 2. Performance
+- Optimisation des processus
+- Amélioration des temps de réponse
+- Réduction de la consommation de ressources
+
+### 3. Fonctionnalités
+- Nouvelles capacités
+- Extensions de fonctionnalités existantes
+- Intégrations supplémentaires
+
+### 4. Documentation
+- Clarification des processus
+- Ajout d'exemples
+- Mise à jour des guides
 
 ## Exemple de Proposition
 
 ```yaml
-exemple_amélioration:
-  titre: "Intégration de l'Auto-Évaluation des Prompts"
-  type: "technique"
+proposition:
+  type: "performance"
+  composant: "unified_processor.md"
   priorité: "haute"
-  
-  contexte:
-    situation: "Validation manuelle des prompts générés"
-    problème: "Processus chronophage et subjectif"
-    impact: "Ralentissement du workflow et qualité variable"
-  
-  solution:
-    description: "Système automatisé d'évaluation des prompts"
-    composants:
-      - Métriques automatiques de qualité
-      - Validation structurelle
-      - Tests de cohérence
-    
-    bénéfices:
-      - Réduction du temps de validation
-      - Standardisation de la qualité
-      - Détection précoce des problèmes
-    
-    implémentation:
-      - Développement des métriques
-      - Intégration au workflow
-      - Documentation et formation
+
+description:
+  problème: "Temps de traitement trop long pour les gros fichiers"
+  solution: "Implémenter un système de cache intelligent"
+  impact: "Réduction de 50% du temps de traitement"
+
+implémentation:
+  étapes:
+    - "Analyse des points de latence"
+    - "Conception du système de cache"
+    - "Implémentation et tests"
+    - "Validation des performances"
+  ressources: "2 développeurs pendant 1 sprint"
+  délai: "2 semaines"
 ```
+
+## Processus de Soumission
+
+1. **Écrire la Proposition**
+   - Utilisez le format ci-dessus
+   - Soyez précis et concis
+   - Incluez tous les détails pertinents
+
+2. **Évaluation**
+   - Impact sur le système
+   - Faisabilité technique
+   - Rapport coût/bénéfice
+
+3. **Validation**
+   - Revue par les pairs
+   - Tests préliminaires
+   - Approbation finale
+
+4. **Implémentation**
+   - Suivi du plan proposé
+   - Points de contrôle réguliers
+   - Documentation des changements
 
 ## Notes Importantes
 
-1. **Qualité des Propositions**
-   - Soyez précis et concis
-   - Documentez clairement
-   - Justifiez l'impact
+- Toute amélioration doit maintenir la compatibilité avec l'existant
+- La documentation doit être mise à jour en conséquence
+- Les tests doivent être inclus dans la proposition
+- Le versioning doit être respecté
 
-2. **Processus Itératif**
-   - Commencez petit
-   - Validez régulièrement
-   - Ajustez selon les retours
+## Comment Utiliser ce Guide
 
-3. **Collaboration**
-   - Partagez les idées
-   - Sollicitez les retours
-   - Travaillez en équipe
+1. **Identification du Besoin**
+   - Analysez le système actuel
+   - Identifiez les points d'amélioration
+   - Évaluez la priorité
+
+2. **Rédaction de la Proposition**
+   - Suivez le format fourni
+   - Soyez détaillé mais concis
+   - Incluez des métriques si possible
+
+3. **Soumission**
+   - Utilisez le système de versioning
+   - Créez une branche dédiée
+   - Soumettez pour revue
+
+4. **Suivi**
+   - Participez aux revues
+   - Répondez aux questions
+   - Mettez à jour selon les retours

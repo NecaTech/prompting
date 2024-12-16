@@ -58,9 +58,19 @@ Modèles réutilisables pour différents types de prompts.
 
 ## Utilisation
 
-1. Créer une demande dans `input.md`
-2. Suivre les instructions dans `instruction.md`
-3. Vérifier le résultat dans `/output`
+1. **Création de la Demande**
+   - Créer une demande dans `input.md`
+   - Format structuré requis
+
+2. **Génération du Prompt**
+   - Suivre les instructions dans `instruction.md`
+   - Le prompt est généré dans `/output/[nom_du_prompt].md`
+   - Format de nom : descriptif et en minuscules (ex: assistant_créatif.md)
+
+3. **Validation**
+   - Vérifier le résultat dans `/output`
+   - S'assurer de la conformité avec les règles de structure
+   - Valider la qualité du prompt généré
 
 ## Maintenance
 
