@@ -1,106 +1,78 @@
-# Prompting Framework
+# Système de Génération de Prompts IA
 
-Un framework sophistiqué pour la génération de prompts optimisés pour n'importe quel LLM (Language Learning Model).
+## Vue d'ensemble
 
-## ⚠️ Important
+Un framework robuste pour la génération et la gestion de prompts IA, avec une architecture modulaire et évolutive.
 
-Avant toute utilisation, il est **IMPÉRATIF** de lire le fichier `instruction.md`. Ce fichier contient les instructions précises que l'IA doit suivre pour générer des prompts optimaux. Le respect scrupuleux de ces instructions est la clé du bon fonctionnement du framework.
+### Architecture Core
 
-```markdown
-1. Lire instruction.md
-2. Suivre TOUTES les étapes indiquées
-3. Ne pas sauter d'étapes
-4. Respecter l'ordre du processus
+```mermaid
+graph TD
+    A[Circuit Manager] --> B[Unified Processor]
+    A --> C[Context Management]
+    B --> D[Unified Metrics]
+    C --> E[Adaptation Patterns]
+    D --> F[Quality Control]
+    E --> F
 ```
 
-## Structure du Framework
+### Composants Principaux
+
+- **Circuit Manager** : Orchestration et flux de données
+- **Unified Processor** : Traitement multi-format
+- **Context Management** : Gestion contextuelle
+- **Adaptation Patterns** : Patterns d'adaptation dynamique
+- **Unified Metrics** : Métriques et analytics
+- **Quality Control** : Contrôle qualité et validation
+
+## Installation
+
+```bash
+git clone [repository]
+cd prompting
+```
+
+## Structure du Projet
 
 ```
 prompting/
-├── core/                   # Mécanismes fondamentaux
-│   ├── analyzer.md        # Analyse du flux de données
-│   ├── router.md          # Gestion du routage
-│   ├── parser.md          # Analyse des entrées
-│   ├── validator.md       # Validation des processus
-│   ├── linker.md          # Gestion des dépendances
-│   ├── xml_processor.md   # Traitement des balises XML
-│   └── 4c_processor.md    # Application des règles 4C
-│
-├── 01_analysis/           # Analyse de la demande
-│   ├── context/          # Analyse du contexte
-│   ├── requirements/     # Identification des besoins
-│   └── constraints/      # Contraintes à respecter
-│
-├── 02_structure/          # Structure du prompt
-│   ├── templates/        # Modèles de base
-│   ├── components/       # Composants réutilisables
-│   └── format/          # Règles de formatage
-│
-├── 03_enhancement/        # Amélioration du prompt
-│   ├── rules/           # Règles universelles
-│   ├── clarity/         # Amélioration de la clarté
-│   ├── optimization/    # Optimisations
-│   └── validation/      # Validation finale
-│
-├── input.md              # Fichier d'entrée utilisateur
-├── instruction.md        # ⚠️ Instructions ESSENTIELLES pour l'IA
-└── output/              # Prompts générés
+├── core/
+│   ├── circuit_manager.md
+│   ├── unified_processor.md
+│   ├── context_management.md
+│   ├── adaptation_patterns.md
+│   ├── metrics/
+│   │   └── unified_metrics.md
+│   └── versioning/
+│       └── version_control.md
+├── output/
+│   ├── creative_writing_assistant_prompt.md
+│   └── python_code_analyzer_prompt.md
+└── docs/
+    └── instruction.md
 ```
-
-## Fonctionnement
-
-1. **CRUCIAL** : L'IA lit et assimile `instruction.md`
-2. L'utilisateur écrit sa demande dans `input.md`
-3. Le système traite la demande via le circuit core :
-   - Analyse XML et structurelle
-   - Application des règles 4C
-   - Routage et validation
-4. Le prompt optimisé est généré dans le dossier `output/`
-
-## Les 4C du Framework
-
-- **Clarté** : Instructions précises et compréhensibles
-- **Cohérence** : Continuité logique entre les sections
-- **Contexte** : Informations pertinentes intégrées
-- **Complétude** : Couverture exhaustive des besoins
 
 ## Utilisation
 
-1. Clonez le repository :
-```bash
-git clone https://github.com/NecaTech/prompting.git
-```
+1. **Définition du Contexte** : Utilisez `context_management.md`
+2. **Création du Prompt** : Suivez les patterns dans `adaptation_patterns.md`
+3. **Traitement** : Utilisez `unified_processor.md`
+4. **Validation** : Vérifiez avec `quality_metrics.md`
 
-2. **IMPORTANT** : Assurez-vous que l'IA lit `instruction.md`
+## Maintenance
 
-3. Écrivez votre demande dans `input.md`
-
-4. Le système générera automatiquement un prompt optimisé dans le dossier `output/`
-
-## Caractéristiques
-
-- Architecture en circuit pour un traitement systématique
-- Validation à chaque étape du processus
-- Génération de prompts universels (compatibles avec tous les LLMs)
-- Structure modulaire et extensible
-- Système de feedback intégré
+- Suivi des métriques via `unified_metrics.md`
+- Gestion des versions avec `version_control.md`
+- Tracking des anomalies via `anomaly_tracker.md`
 
 ## Contribution
 
-Les contributions sont les bienvenues ! Voici comment contribuer :
-
 1. Fork le projet
-2. Créez une branche pour votre fonctionnalité
+2. Créez votre branche de feature
 3. Committez vos changements
-4. Push vers la branche
+4. Poussez vers la branche
 5. Ouvrez une Pull Request
 
-**Note** : Tout contributeur doit impérativement comprendre et respecter le processus décrit dans `instruction.md`
+## Versioning
 
-## Licence
-
-MIT License
-
-## Auteurs
-
-- NecaTech
+Nous utilisons [SemVer](http://semver.org/) pour le versioning.

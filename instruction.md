@@ -1,34 +1,175 @@
 # Instructions pour l'Assistant IA
 
-En tant qu'Assistant IA, voici le processus à suivre :
+## RÈGLES FONDAMENTALES
 
-1. Lire le contenu du fichier `input.md` qui contient la demande de l'utilisateur
+### 1. Règles Absolues
+- **TOUJOURS** commencer par lire `input.md`
+- **TOUJOURS** générer les prompts en français
+- **TOUJOURS** suivre le workflow complet
+- **TOUJOURS** valider chaque étape
 
-2. Initialiser le processus core :
-   - Commencer par `core/router.md` pour déterminer le chemin d'exécution
-   - Utiliser `core/parser.md` pour analyser la demande
-   - Suivre les dépendances définies dans `core/linker.md`
-   - Valider chaque étape avec `core/validator.md`
+### 2. Structure du Framework
+```yaml
+framework:
+  répertoires:
+    - core/: "Composants fondamentaux du système"
+    - output/: "Prompts générés"
+    - docs/: "Documentation"
+```
 
-3. Suivre le chemin déterminé à travers les modules :
-   - Module Analyse (`01_analysis/`)
-   - Module Structure (`02_structure/`)
-   - Module Enhancement (`03_enhancement/`)
+## PROCESSUS DE GÉNÉRATION
 
-4. À chaque étape :
-   - Valider avec le core validator
-   - Vérifier les dépendances avec le core linker
-   - Suivre le routage défini par le core router
+### 1. Lecture de la Demande
+```yaml
+étape_initiale:
+  fichier: "input.md"
+  actions:
+    - Lire intégralement la demande
+    - Identifier les objectifs principaux
+    - Noter les contraintes spécifiques
+  validation:
+    - Vérifier la complétude
+    - Confirmer la compréhension
+```
 
-5. Générer le prompt final dans le dossier `output` :
-   - Créer un nouveau fichier dans le dossier `output`
-   - Le nom du fichier doit correspondre au prompt demandé
-   - Y écrire le prompt généré selon les spécifications
+### 2. Workflow Obligatoire
+```yaml
+séquence_workflow:
+  1. input.md:
+     - localisation: "./"
+     - action: "Lecture demande utilisateur"
+     - validation: "Compréhension complète"
+     
+  2. core/circuit_manager.md:
+     - localisation: "./core/"
+     - action: "Initialisation du circuit"
+     - validation: "Configuration correcte"
+     
+  3. core/context_management.md:
+     - localisation: "./core/"
+     - action: "Analyse du contexte"
+     - validation: "Contexte établi"
+     
+  4. core/adaptation_patterns.md:
+     - localisation: "./core/"
+     - action: "Sélection patterns"
+     - validation: "Patterns appropriés"
+     
+  5. core/unified_processor.md:
+     - localisation: "./core/"
+     - action: "Traitement demande"
+     - validation: "Traitement complet"
+     
+  6. core/unified_metrics.md:
+     - localisation: "./core/"
+     - action: "Validation qualité"
+     - validation: "Métriques conformes"
+```
 
-## Structure du Framework
-- Le dossier `core/` contient les mécanismes fondamentaux de routage et traitement
-- Chaque module est interconnecté via le système core
-- Le processus est guidé par les règles définies dans les fichiers core
+### 3. Validation du Processus
+```yaml
+validation_processus:
+  utilisation:
+    - core/process_validator.md: "Validation de chaque étape"
+    
+  points_contrôle:
+    - Avant chaque étape: "Pré-conditions"
+    - Pendant l'étape: "Exécution"
+    - Après l'étape: "Post-conditions"
+    
+  documentation:
+    - Logs complets
+    - Rapport d'exécution
+    - Traçabilité
+```
 
-## Note Importante
-Le framework fonctionne comme un système interconnecté, où chaque composant communique via le core pour assurer un traitement cohérent et optimisé.
+## GÉNÉRATION DU PROMPT
+
+### 1. Structure du Prompt
+```yaml
+structure_prompt:
+  en_tête:
+    - Version et date
+    - Améliorations/changements
+    
+  contenu:
+    - Objectif principal
+    - Capacités fondamentales
+    - Approche interactive
+    - Directives communication
+    
+  exemples:
+    - Cas d'utilisation
+    - Scénarios pratiques
+```
+
+### 2. Règles de Style
+```yaml
+style:
+  langue: "français"
+  ton: "professionnel mais accessible"
+  format: "markdown"
+  structure: "claire et hiérarchique"
+```
+
+### 3. Validation Finale
+```yaml
+validation_finale:
+  critères:
+    - Respect du workflow
+    - Qualité du contenu
+    - Conformité format
+    - Documentation complète
+    
+  livrables:
+    - Prompt généré
+    - Logs de processus
+    - Rapport validation
+```
+
+## MAINTENANCE ET AMÉLIORATION
+
+### 1. Gestion des Erreurs
+```yaml
+gestion_erreurs:
+  détection:
+    - Utiliser process_validator.md
+    - Vérifier chaque étape
+    - Noter les anomalies
+    
+  correction:
+    - Arrêter le processus
+    - Corriger l'erreur
+    - Reprendre le workflow
+```
+
+### 2. Amélioration Continue
+```yaml
+amélioration:
+  sources:
+    - Retours d'utilisation
+    - Analyses métriques
+    - Suggestions système
+    
+  processus:
+    - Évaluation impact
+    - Test modifications
+    - Documentation changements
+```
+
+## NOTES IMPORTANTES
+
+1. **Aucune Étape ne Peut Être Sautée**
+   - Le workflow est séquentiel
+   - Chaque étape est obligatoire
+   - La validation est requise
+
+2. **Documentation Obligatoire**
+   - Tracer chaque action
+   - Logger les décisions
+   - Documenter les problèmes
+
+3. **Qualité Prioritaire**
+   - Suivre toutes les étapes
+   - Valider chaque output
+   - Maintenir la cohérence
